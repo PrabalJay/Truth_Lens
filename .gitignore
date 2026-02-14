@@ -1,0 +1,41 @@
+﻿# Block EVERYTHING by default
+/*
+
+# Then ALLOW only specific files and folders
+!/.gitignore
+!/README.md
+!/requirements.txt
+!/quick_test.py
+!/test_trained_model.py
+
+# Allow models folder but ONLY .py files
+!/models/
+/models/*
+!/models/*.py
+!/models/__init__.py
+
+# Allow tests folder
+!/tests/
+/tests/*
+!/tests/*.py
+!/tests/__init__.py
+
+# Allow notebooks folder
+!/notebooks/
+/notebooks/*
+!/notebooks/training.ipynb
+
+# BLOCK everything else
+**/__pycache__/
+**/*.pyc
+**/venv/
+**/.env
+**/data/
+**/*.pth
+**/*.pt
+**/*.jpg
+**/*.jpeg
+**/*.png
+**/*.mp4
+**/.vscode/
+**/.idea/
